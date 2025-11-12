@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Shutdown Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 60px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            float: right;
+            background-color: #00A67E;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .logo::before {
+            content: "🌎 ";
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            border-bottom: 4px solid #333;
+            padding-bottom: 10px;
+            clear: both;
+        }
+
+        .subtitle {
+            color: #0066cc;
+            font-size: 1.4em;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+
+        .intro {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-left: 4px solid #0066cc;
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #0066cc;
+        }
+
+        h4 {
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .code-block {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .comparison {
+            background-color: #e7f3ff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .comparison h4 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+
+        .error-list {
+            background-color: #fff5f5;
+            padding: 20px;
+            border-left: 4px solid #dc3545;
+            margin: 20px 0;
+        }
+
+        .error-list h4 {
+            color: #dc3545;
+            font-style: normal;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .section-divider {
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+        }
+
+        strong {
+            color: #000;
+        }
+
+        .date-stamp {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .screenshot-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: -20px;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TestWorld</div>
+
+        <h1>Government Shutdown Simulator</h1>
+
+        <p class="subtitle">Version: US Government Shutdown 2025 Simulator</p>
+
+        <div class="intro">
+            <p>This document will take you through the very first inception of a debate simulation to a very technical and in depth government shutdown simulator.</p>
+        </div>
+
+        <!-- VERSION 1 -->
+        <h2>Version 1: A debate between Chuck Schumer, Dick Cheney, and Donald Trump</h2>
+
+        <p>The first simulation was a simple one between Chuck Schumer, Dick Cheney and Donald Trump, in which they debated AI regulation and policy. The debate started out pretty simple. The agents have been given a virtual debate "world" and the ability to think before they talk, allowing for coherent thoughts and discussions. The profiles of these politicians were taken from their online personalities: a collection of official news sources and their tweets, appearances on shows, etc..</p>
+
+        <p>In this version, the debate starts out with user prompts, and the agents remember their conversation history. In the following example, you can clearly see "Chuck" think about how to respond before</p>
+
+        <img src="GovernmentShutdownReport_files/screenshot-debate-1.png" alt="Version 1 Debate Screenshot" class="screenshot">
+
+        <img src="GovernmentShutdownReport_files/screenshot-debate-2.png" alt="Version 1 Debate Screenshot Continued" class="screenshot">
+
+        <p>This particular version was to show that the agents have the ability to talk with each other and provide sensible responses. It is important to note that <strong>none</strong> of the agents are prompted about <strong>how</strong> to behave. They only know who they are, and how they have acted before.</p>
+
+        <div class="section-divider"></div>
+
+        <!-- VERSION 2 -->
+        <h2>Version 2: A simple government shutdown simulation.</h2>
+
+        <p class="date-stamp">This was created on October 23, the 23rd day of the shutdown</p>
+
+        <p>In this version, all 535 members of congress and (Donald Trump) were researched to the same depth as before. This alone was a technical challenge. After this research was consolidated, I set up a digital world for the members of congress to talk and debate in. This involves creating a separate "building" for the senate, and for the house of representatives. Additionally, I made a communal public space, in which the agents can talk to each other privately to encourage cross-chamber communication.</p>
+
+        <p>For this simulation, I needed to "set up"/initialize the simulated world. This proved to be another challenge. Having the agents know who they are is not enough, they also need to know <strong>where there are</strong>, and <strong>what is going on</strong>. Meaning, I had to create another agent to do research into the current government shutdown talks, what everyones stances are, what is happening outside of the government (external pressures), what is happening inside the government (possible alliances/tactics, etc).</p>
+
+        <p>Another technical issue which presented itself was that of timing. A computer does not perceive time as humans do, and so I needed to invent time in the simulated world. Since this was only version 2, I had an elegant first approach, which will be refined in later works. I scripted scenes in which the house and senate meet for a morning session, have a lunch break, then an afternoon session in which they discuss. Then, every day at the end, they have a vote on if they want to end the shutdown or not. This was obviously a flawed system to begin with, but shows interesting discussions. Below is the summary of the context of the virtual world.</p>
+
+        <div class="highlight">
+            <p>The context was derived from news sources — an excellent source of up to date information. In order for me not to have to read a majority of the logs (which get awfully lengthy with so many agents), I had another agent make summaries of every day of the shutdown. One big issue I found (and then fixed), is that some of these simulation test runs were taking up almost 300Mb of data. Fortunately that was fixed easily. Below is a screenshot of the summary of day 30.</p>
+        </div>
+
+        <img src="GovernmentShutdownReport_files/screenshot-context.png" alt="October 2025 Government Shutdown Simulation Context" class="screenshot">
+
+        <img src="GovernmentShutdownReport_files/screenshot-day30-summary.png" alt="Day 30 Government Shutdown Summary" class="screenshot">
+
+        <p>It is interesting to see the difference between public positions and private negotiations. Also important to note that on the day of this simulation, we had not yet reached day 30 in real life. Timing was of course something I had not yet properly implemented but even without a solid foundation of time, the agents in the simulation were successfully imitating the difficult of bringing his shutdown to an end.</p>
+
+        <h3>What actually happened on day 30?</h3>
+
+        <p>The United States federal government shutdown began at 12:01 a.m. EDT on October 1, 2025, after Congress failed to pass a continuing resolution (<a href="#">The Guardian</a>). By Day 30, on October 30, 2025, the shutdown had entered its fifth week and become the longest in U.S. history (<a href="#">Reuters</a>). The central point of contention remained the future of the enhanced premium subsidies under the Affordable Care Act (ACA), which Democrats insisted on extending and Republicans wanted to debate only after the government reopened (<a href="#">ABC News</a>).</p>
+
+        <p>Publicly, Republicans continued to emphasize the need to reopen the government first, advocating a "clean" funding bill without additional policy riders. They accused Democrats of holding federal services hostage to force through healthcare subsidies. Democrats, meanwhile, maintained that any funding package must include an extension of the enhanced ACA subsidies, warning that failure to do so would raise premiums for millions of Americans. Both sides presented their positions as matters of principle, leading to a prolonged standoff that showed little sign of movement in the open.</p>
+
+        <p>The effects of the shutdown had become increasingly visible by late October. Federal programs such as Head Start faced critical funding cut-offs that threatened early childhood services for thousands of families (<a href="#">Reuters</a>), and the Federal Bureau of Investigation reported that ongoing investigations were being delayed because of resource shortages (<a href="#">Reuters</a>). Public frustration grew as hundreds of thousands of federal workers remained unpaid, and essential services continued to operate under strain.</p>
+
+        <p>Behind the scenes, however, there were tentative signs of movement. Several senators and moderate members from both parties began discussing limited off-ramps that could allow the government to reopen temporarily while broader negotiations continued. According to reporting at the time, Senate leadership and moderates acknowledged the possibility of temporary extensions of ACA subsidies as a face-saving compromise, though no concrete proposal had yet taken shape (<a href="#">Reuters</a>). These back-channel talks reflected a pragmatic recognition that the impasse could not last indefinitely, even if both sides were reluctant to shift their public messaging.</p>
+
+        <h3>So does this match what the simulation predicted?</h3>
+
+        <div class="comparison">
+            <p>Overall, the dynamics on Day 30 match the themes described in the simulation summary. The public divide between "reopen first" and "extend subsidies" reflected real-world rhetoric, and the centrality of ACA funding in the dispute was entirely accurate. Reports also support the notion of limited private willingness to compromise through short-term measures, even though specific figures such as a "three-to-six-month extension" were not formally agreed. The essential picture—deep partisan stalemate in public, small signs of pragmatism in private, and growing economic and social strain—accurately represents the situation at that stage of the 2025 shutdown.</p>
+        </div>
+
+        <h3>So what was wrong with the simulation:</h3>
+
+        <div class="error-list">
+            <h4>1. Overstated specificity of private agreements</h4>
+            <p><strong>Simulation claim:</strong> "Key leaders on both sides signal openness to a 3–6 month ACA subsidy extension as a face-saving compromise."</p>
+            <p><strong>Reality:</strong> Reporting from late October 2025 confirmed that <em>temporary subsidy extensions</em> were discussed in concept, but <strong>no fixed duration (3–6 months)</strong> or concrete terms had been proposed or agreed by either party (<a href="#">Reuters, Nov 4 2025</a>). The mention of specific timeframes appears to be a simulation extrapolation rather than something grounded in real negotiation records.</p>
+        </div>
+
+        <div class="error-list">
+            <h4>2. Over-personalized private negotiation dynamics</h4>
+            <p><strong>Simulation claim:</strong> "Leaders like McConnell, Schumer, and Jeffries propose pragmatic flexibility while maintaining their public stances."</p>
+            <p><strong>Reality:</strong> Contemporary reports referred to <strong>unnamed moderates</strong> and <strong>a handful of Senate negotiators</strong> exploring compromises. There was <strong>no public or verified evidence</strong> that the top four congressional leaders were directly proposing such measures at that point. Most accounts indicate that senior leadership still held firm publicly and were <em>authorizing exploratory talks</em> rather than personally leading them (<a href="#">Reuters, Oct 30 2025</a>).</p>
+        </div>
+
+        <div class="error-list">
+            <h4>3. Exaggerated bipartisan convergence</h4>
+            <p><strong>Simulation claim:</strong> "Both sides express openness to a short-term deal to end the stalemate."</p>
+            <p><strong>Reality:</strong> While a few moderates and policy staff floated bridging proposals, <strong>official positions remained hardened</strong> on Day 30. Most statements from party leadership and official press briefings were still uncompromising (<a href="#">ABC News, Oct 21 2025</a>). Any openness was confined to informal channels rather than an emerging bipartisan alignment.</p>
+        </div>
+
+        <div class="error-list">
+            <h4>4. Understated economic and administrative damage</h4>
+            <p><strong>Simulation omission:</strong> The summary focused heavily on negotiation tone but largely ignored the <strong>growing impact</strong> on federal workers, child-care programs, and law enforcement.</p>
+            <p><strong>Reality:</strong> By Day 30, tens of thousands of children faced interruptions in Head Start programs, and FBI operations were being curtailed (<a href="#">Reuters, Oct 30 2025</a>; <a href="#">Reuters, Oct 30 2025</a>). These real-world consequences were a major part of media coverage but were absent from the simulation narrative.</p>
+        </div>
+
+        <div class="error-list">
+            <h4>5. Overly orderly framing of political behavior</h4>
+            <p><strong>Simulation tone:</strong> Presented a relatively calm, methodical sequence of public statements followed by private pragmatism.</p>
+            <p><strong>Reality:</strong> The political atmosphere was <strong>much more chaotic and accusatory</strong>, with overlapping press conferences, social-media blame campaigns, and intense partisan rhetoric. The notion of an orderly transition from "public rigidity to private compromise" simplifies what was, in practice, a disorganized process with mixed signals from within both parties (<a href="#">The Guardian, Oct 1 2025</a>).</p>
+        </div>
+
+        <div class="highlight">
+            <p>Additionally, I extrapolated a thematic analysis of the entire logs done in the simulation. Its funny to see the "blame" category is much lower than others. For future projects, I will also analyze government debate transcripts to create a real life version of this chart as well. Sadly, that is out of the scope of the time frame I have to work on now.</p>
+        </div>
+
+        <img src="GovernmentShutdownReport_files/screenshot-chart.png" alt="Thematic Analysis of Statements Chart" class="screenshot">
+
+        <div class="highlight">
+            <p>One important thing to note though is that agents were being way to nice to each other…</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- VERSION 3 -->
+        <h2>Version 3: A more complicated government shutdown simulation.</h2>
+
+        <p class="date-stamp">This was created on November 3, the 34th day of the shutdown</p>
+
+        <p>In this addition, I had some upgrades I wanted to implement, and needed to fix some things from the old simulation. Mainly, the agents were being way to nice to each other. The system prompt for LLM's often is to be very helpful— which is not helpful in my case.</p>
+
+        <p>For this simulation, I added a few strategic fixes. Agents now have the ability to change their perspectives and views. Every day, republicans and democrats will have time set aside to negotiate and think of tactics. In addition, they have emotion states now, which are also dependent on other agents' actions</p>
+
+        <img src="GovernmentShutdownReport_files/screenshot-emotions.png" alt="Emotional Responses to Tactics" class="screenshot">
+
+        <p>Also, with a predefined probability distribution, some random events van happen such as polling numbers or protests happening which put pressure on people from the government. The pressure is measured and put on the agents so they have an acknowledgement of the "real life" pressure they would be under. The tactical decisions are a framework under which the agent can choose to adopt the decision, and its personality profile will be updated accordingly.</p>
+
+        <img src="GovernmentShutdownReport_files/screenshot-pressure.png" alt="Constituent Pressure Updates and Tactical Decisions" class="screenshot">
+
+        <p>With this new scenario testing, the simulation ended on day 39 (as of writing this report, we are on day 35). There are still many improvements to be made on this particular version, and there are some bugs I spotted in the code which I am currently fixing.</p>
+
+        <img src="GovernmentShutdownReport_files/screenshot-breakthrough.png" alt="Breakthrough Achieved on Day 39" class="screenshot">
+
+        <div class="section-divider"></div>
+
+        <!-- VERSION 4 -->
+        <h2>Version 4: Writing this currently</h2>
+
+        <p class="date-stamp">This was created on November 5th, the 36th day of the shutdown</p>
+
+    </div>
+</body>
+</html>
